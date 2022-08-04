@@ -64,13 +64,6 @@ if /i not [%1]==[exec] goto :plugin
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :exec
 
-if not exist "%bindir%" (
-  echo No global/local python version has been set yet. Please set the global/local version by typing:
-  echo pyenv global 3.7.4
-  echo pyenv local 3.7.4
-  exit /b
-)
-
 set cmdline=%*
 set cmdline=%cmdline:~5%
 

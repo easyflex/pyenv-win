@@ -24,7 +24,7 @@ for /f "%skip_arg%delims=" %%i in ('%pyenv% vname') do call :extrapath "%~dp0..\
 
 :: Add %AppData% Python Scripts to %extrapaths%.
 for /F "tokens=1,2 delims=-" %%i in ('%pyenv% vname') do (
-  if /i "%%j" == "win32" (
+  if /i "%%j" == "32" (
     for /F "tokens=1,2,3 delims=." %%a in ("%%i") do (
         set "extrapaths=%extrapaths%%AppData%\Python\Python%%a%%b-32\Scripts;"
     )

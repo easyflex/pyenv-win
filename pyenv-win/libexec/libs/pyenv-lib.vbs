@@ -392,10 +392,10 @@ Function Is32Bit()
     Is32Bit = (UCase(arch) = "X86")
 End Function
 
-' If on a 32bit computer, default to -win32 versions.
+' If on a 32bit computer, default to -32 versions.
 Function Check32Bit(version)
     ' WScript.echo "kkotari: pyenv-lib.vbs check32bit..!"
-    If Is32Bit And Right(LCase(version), 6) <> "-win32" Then _
-        version = version & "-win32"
+    If Is32Bit And Right(LCase(version), 6) <> "-32" Then _
+        version = version & "-32"
     Check32Bit = version
 End Function

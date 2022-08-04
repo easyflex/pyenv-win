@@ -290,15 +290,15 @@ Both releases can install 64bit and 32bit python versions; the difference is in 
 ```
 > pyenv install -l | findstr 3.8
 ....
-3.8.0-win32
+3.8.0-32
 3.8.0
-3.8.1rc1-win32
+3.8.1rc1-32
 3.8.1rc1
-3.8.1-win32
+3.8.1-32
 3.8.1
-3.8.2-win32
+3.8.2-32
 3.8.2
-3.9.0-win32
+3.9.0-32
 3.9.0
 ....
 ```
@@ -308,13 +308,13 @@ Both releases can install 64bit and 32bit python versions; the difference is in 
 >pyenv install -l | findstr 3.8
 ....
 3.8.0
-3.8.0-amd64
+3.8.0-64
 3.8.1rc1
-3.8.1rc1-amd64
+3.8.1rc1-64
 3.8.1
-3.8.1-amd64
+3.8.1-64
 3.8.2
-3.8.2-amd64
+3.8.2-64
 ....
 ```
 ==================  

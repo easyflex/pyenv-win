@@ -50,7 +50,7 @@ With regexFile
     .IgnoreCase = True
 End With
 
-' Adding -win32 as a post fix for x86 Arch
+' Adding -32 as a post fix for x86 Arch
 Function JoinWin32String(pieces)
     ' WScript.echo "kkotari: pyenv-install-lib.vbs JoinWin32String..!"
     JoinWin32String = ""
@@ -59,7 +59,7 @@ Function JoinWin32String(pieces)
     If Len(pieces(VRX_Patch))     Then JoinWin32String = JoinWin32String &"."& pieces(VRX_Patch)
     If Len(pieces(VRX_Release))   Then JoinWin32String = JoinWin32String & pieces(VRX_Release)
     If Len(pieces(VRX_RelNumber)) Then JoinWin32String = JoinWin32String & pieces(VRX_RelNumber)
-    If Len(pieces(VRX_x64)) = 0   Then JoinWin32String = JoinWin32String & "-win32"
+    If Len(pieces(VRX_x64)) = 0   Then JoinWin32String = JoinWin32String & "-32"
 End Function
 
 ' For x64 Arch
